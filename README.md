@@ -1,3 +1,13 @@
+# WARNING: DO NOT USE THIS REPO!
+
+# Please go to [original repository](https://github.com/labelmeai/labelme)
+
+
+***
+
+
+
+
 <h1 align="center">
   <img src="labelme/icons/icon.png"><br/>labelme
 </h1>
