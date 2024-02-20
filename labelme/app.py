@@ -815,6 +815,8 @@ class MainWindow(QtWidgets.QMainWindow):
             deleteFile,
             None,
             createMode,
+            createLineMode,
+            createPointMode,
             editMode,
             duplicate,
             delete,
@@ -1390,6 +1392,16 @@ class MainWindow(QtWidgets.QMainWindow):
         text = None
         if items:
             text = items[0].data(Qt.UserRole)
+            
+        else:
+            # ---------------------automatically scroll to the next label--------------------------
+            if self._config["auto_scroll_to_next_label"]:
+                current_row = self.labelDialog.labelList.currentRow()
+                if current_row < self.labelDialog.labelList.count() - 1:
+                    self.labelDialog.labelList.setCurrentRow(current_row + 1)
+                text = self.labelDialog.labelList.currentItem().text()
+            # --------------------------------------------------------------------------------------
+                    
         flags = {}
         group_id = None
         description = ""

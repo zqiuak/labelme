@@ -1,17 +1,48 @@
 auto_save: false
 display_label_popup: true
-store_data: true
+store_data: false
 keep_prev: false
 keep_prev_scale: false
 keep_prev_brightness: false
 keep_prev_contrast: false
 logger_level: info
+auto_scroll_to_next_label: true
 
 flags: null
 label_flags: null
-labels: null
+labels:
+  - "Line 1 (Right)"
+  - "Line 2 (Right)"
+  - "Line 1 (left)"
+  - "Line 2 (left)"
+  - "ML"
+  - "Cd (Right)"
+  - "Cd' (Right)"
+  - "Point X (Right)"
+  - "Point Y (Right)"
+  - "Go2 (Right)"
+  - "Inf. Go (Right)"
+  - "Go1 (Right)"
+  - "Go1' (Right)"
+  - "Pg"
+  - "Cd (left)"
+  - "Cd' (left)"
+  - "Point X (left)"
+  - "Point Y (left)"
+  - "Go2 (left)"
+  - "Inf. Go (left)"
+  - "Go1 (left)"
+  - "Go1' (left)"
+  - "M1D"
+  - "M1M"
+  - "M2M"
+  - "M2D"
+  - "M3D"
+  - "M3M"
+  - "M4M"
+  - "M4D"
 file_search: null
-sort_labels: true
+sort_labels: false
 validate_label: null
 
 default_shape_color: [0, 255, 0]
